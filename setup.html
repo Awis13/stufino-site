@@ -3,16 +3,16 @@
 <title>Stufino - Setup</title><link rel="stylesheet" href="style.css"></head><body><main>
 <nav><a href="index.html">Stufino</a><a href="setup.html">Setup</a><a href="recorder.html">Recorder</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
 <h1>Set up your stove</h1>
-<h2>1. Find your device code</h2>
-<p>The code is printed on a sticker on the stove's Wi-Fi module (the small board or dongle fitted to the stove). The vendor's own app shows the same code on its device screen.</p>
+<h2>1. Have your device code or bridge address ready</h2>
+<p>The code is printed on the stove's Wi-Fi module (the small board or dongle fitted to the stove).</p>
 <h2>2. Choose how the app reaches the stove</h2>
 <ul>
-<li><b>Local</b>: the module's address on your home network. Fastest, works at home.</li>
+<li><b>Local</b>: a serial-to-Wi-Fi bridge on the stove's board (for example ESP-Link). Nothing leaves your home.</li>
 <li><b>Cloud</b>: a relay server and your device code. The app has no server built in; you enter the address yourself.</li>
 <li><b>Auto</b>: tries Local first, then Cloud.</li>
 </ul>
 <h2>3. The server address</h2>
-<p>For modules that use the vendor's cloud, the relay address is the one the vendor's own app uses: <code>duepiwebserver2.com</code>, port <code>3000</code> (the port is under Advanced in the app).</p>
+<p>The relay address is the one the vendor's own app connects to: <code>duepiwebserver2.com</code>, port <code>3000</code> (the port is under Advanced in the app).</p>
 <p class="mut">The relay serves one client per stove. If the vendor's app connects at the same time, one of the two is disconnected. The <a href="recorder.html">Recorder</a> avoids this.</p>
 <h2>4. Test and save</h2>
 <p>Tap Test connection, then Save. Turning the stove on or off always asks for confirmation.</p>
